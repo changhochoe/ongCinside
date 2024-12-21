@@ -19,3 +19,17 @@ function logoAppear(){
 setTimeout(() => {
     logoAppear()
 }, 2500);
+
+// 좌측 메뉴창 닫기
+// function closeMenu(index){
+//     document.getElementsByClassName('shutdown')[index].style.display = 'none'
+// }
+
+document.getElementsByClassName('shutdown')[0].addEventListener('click', function closeMenu(){
+    document.getElementById('left_menu').style.display = 'none'
+})
+
+//메뉴창 열기 시봉방거
+document.getElementById('freakinButton').addEventListener('click', function openMenu(){
+    document.getElementById('left_menu').style.display = 'block'
+})

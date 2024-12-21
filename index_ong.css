@@ -77,8 +77,9 @@
     transition: all 4s ease;
 }
 
-/* 좌측 메뉴옵션 */
-.left_menu{
+/* 좌측 메뉴창 */
+#left_menu{
+    display: none;
     position: absolute;
     z-index: 1000;
     border: 0.1vh solid black;
@@ -98,6 +99,10 @@
     background-color: aqua;
     height: 5vh;
     width: 29.9vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* 로그인 버튼 */
@@ -132,4 +137,58 @@
 
 .login_img_divider:hover{
     cursor: pointer;
+}
+
+/* x버튼 */
+.shutdown{
+    display: flex;
+    width: 5vh;
+    height: 5vh;
+    border-top-right-radius: 2vh;
+    border: 1px solid black;
+    font-size: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.shutdown:hover{
+    cursor: pointer;
+}
+
+/* 메뉴에서 선택하는 기능 */
+
+.option{
+    font-size: larger;
+    display: flex;
+    height: 6vh;
+    border: solid black 1px;
+    align-items: center;
+}
+
+/* 메뉴창 여는 버튼 */
+#freakinButton{
+    display: flex;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 5vh;
+    height: 5vh;
+    border: solid black 1px;
+    background-color: azure;
+    border-radius: 0.5vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.freakinHover:hover{
+    cursor: pointer;
+}
+
+.bar{
+    display: flex;
+    width: 4vh;
+    height: 1vh;
+    background-color: black;
+    border-radius: 1vh;
 }
