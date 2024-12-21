@@ -1,11 +1,52 @@
 .box{
+    display: flex;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     height: 70vh;
-    width: 100vh;
+    width: 50vh;
     background-color: azure;
     border: solid black 0.25vh;
     border-radius: 1vh;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+/* 그그그 뭐냐 하여튼 그거임 */
+.inputContainer{
+    display: flex;
+    width: 30vh;
+    height: 15vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inputBox{
+    border: 0.3vh solid black;
+    border-radius: 1vh;
+    width: 28vh;
+    height: 4vh;
+}
+.sendButton{
+    width: 25vh;
+    height: 5vh;
+    border: solid black 0.3vh;
+    border-radius: 1vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.sendButton:active{
+    width: 24.6vh;
+    height: 4.8vh;
+    border: solid black 0.3vh;
+    border-radius: 1vh;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
