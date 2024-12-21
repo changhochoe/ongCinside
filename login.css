@@ -22,6 +22,14 @@
     justify-content: space-evenly;
 }
 
+.inputContainer2{
+    display: flex;
+    width: 30vh;
+    height: 27vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .inputBox{
     border: 0.3vh solid black;
     border-radius: 1vh;
@@ -38,6 +46,10 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
+}
+
+.sendButton:hover{
+    cursor: pointer;
 }
 
 .sendButton:active{
